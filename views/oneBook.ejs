@@ -25,12 +25,9 @@
  <% if (!oneBook.isBorrowed) { %>
     <div class="oneBook-btn">
         <a class="btn btn-primary btn-lg" role="button"  onclick="addToCart(oneBook)" href="/borrowed/<%= oneBook._id %>">Borrow </a>
-      
       </div>
-        
+      
  <% } %> 
-
-
   <div class="oneBook-btn">
   <a class="btn btn-secondary btn-lg" href="/books" role="button">Insert</a>
   </div>
