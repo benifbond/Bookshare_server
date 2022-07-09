@@ -26,6 +26,7 @@ body{
   margin: 0px;
   font-family: sans-serif,'Roboto';
   
+  
    } 
 .background{
   background-image: url("../images/ben-kolde.jpg");
@@ -38,6 +39,9 @@ background-size: cover;
 
 }
 
+#navbarNav ul a {
+  margin:1rem
+}
 
 /* /////////////////INDEX EJS//////// */
 
@@ -112,9 +116,7 @@ background-size: cover;
           padding: 20px;
       }
       /* ///////////BENIAH LOGO ////////// */
-.logo{
-  width:100px
-}
+
 
 .oneBook {
   margin: 24px;
