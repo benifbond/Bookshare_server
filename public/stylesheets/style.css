@@ -1,7 +1,7 @@
 
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   padding: 2rem;
   margin: 0.5rem
 }
@@ -13,20 +13,30 @@ h3 {
 }
 h5{
   font-family: 'Patua One', cursive;
-  font-size: 2.5rem;
-  padding: 2rem;
+  font-size: 1.5rem;
+  padding: 2.3rem 0 ;
   margin: 0.5rem
 }
 h6{font-family: 'Tangerine', cursive;
-  font-size:60px
+  font-size:1em
 }
 
 body{
   text-align: center;
   margin: 0px;
   font-family: sans-serif,'Roboto';
-  background-color:#F2F2F2; 
+  
    } 
+.background{
+  background-image: url("../images/ben-kolde.jpg");
+  min-height:100vh;
+opacity: 0.9;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
 
 
 /* /////////////////INDEX EJS//////// */
@@ -36,11 +46,7 @@ body{
   margin 20px 
 }
 
-.headIndex{
-  margin: 50px 0px ;
-   background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); 
-}
+
 
    /* LOGIN AND SINGUP FORM */
 .form-signin {
@@ -239,3 +245,19 @@ body{
   background: #dbdbdb;
   box-shadow:  7px -7px 14px #a4a4a4,
                -7px 7px 14px #ffffff;}
+
+.registerBtn{
+  margin: 1rem 0 4rem 0;
+}
+.d-flex{
+  margin:1rem auto;
+}
+.userProfile{border-radius: 23px;
+background: linear-gradient(225deg, #e6e6e6, #ffffff);
+box-shadow:  -5px 5px 2px #666666,
+             5px -5px 2px #ffffff;
+}
+.errorPage{
+  margin-bottom: 0;
+  padding:8rem
+}

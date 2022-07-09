@@ -28,11 +28,21 @@
         <li class="nav-item ">
           <a class="nav-link " href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/borrowed">Borrowed Books</a>
-        </li>
+        
       </ul>
     </div>
+     <%# if (userBooks.currentUser) { %> 
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <form id="nav-signup" class="nav-link" method="POST" action="/logout">
+             <button type="submit">Logout</button>
+   </form>
+      </li>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+        <a id="nav-signup" class="nav-link" href="/borrowed">Borrowed Books</a>
+      </li>
+      <%#} else { %>
     <ul class="navbar-nav navbar-right">
       <li class="nav-item">
       <a id="nav-signup" class="nav-link" href="/signup">Register</a>
@@ -40,8 +50,10 @@
     <li class="nav-item">
       <a class="nav-link" href="/login">Login</a></li>
   </ul>
+  <%#}%>
   </div>
 </nav>
+
 <%- body %> 
 <!-- ////////////////////////////////footer section//////////////////////////////// -->
 <script src="/js/script.js"></script>
